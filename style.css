@@ -1,0 +1,85 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #FDF5E6; /* สีครีมพาสเทล */
+    color: #5D4037; /* สีน้ำตาลเข้มสำหรับตัวอักษร */
+    line-height: 1.6;
+}
+
+/* แถบเมนูนำทาง (Navbar) */
+nav {
+    background-color: #D7CCC8; /* สีน้ำตาลอ่อนพาสเทล */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #5D4037;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #A1887F;
+    background-color: #EFEBE9;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* ส่วนเนื้อหา */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(93, 64, 55, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #8D6E63;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 5px solid #D7CCC8;
+    object-fit: cover;
+}
+
+/* ตกแต่งส่วนผลงาน */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #EFEBE9;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #8D6E63;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #8D6E63;
+}
